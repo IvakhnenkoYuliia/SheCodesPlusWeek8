@@ -1,3 +1,27 @@
+function displayForecast(){
+    let forecastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class="row">`;
+    let days = ["Thu", "Fri", "Sat", "Fri", "Sat", "Sat"];
+    days.forEach(function(day){
+        forecastHTML = forecastHTML + `
+        <div class="col-2">
+            <div class="weather-forecast-date">
+                ${day}
+            </div>
+            <img src="" alt="" width="42">
+            <span class="weather-forecast-temp-max">
+                18°
+            </span>
+            <span class="weather-forecast-temp-min">
+                12°
+            </span>
+        </div>`;
+    })
+    forecastHTML = forecastHTML +   `</div>`; 
+    forecastElement.innerHTML = forecastHTML;
+}
+
 function showPosition(position) {
     let apiKey = "fb46fd31e8b7edc26336b76cae7c4e38";
     let units = "metric";
@@ -108,3 +132,5 @@ buttonSearch.addEventListener("submit", search);
 
 let buttonCurrent = document.querySelector("#current-location-button");
 buttonCurrent.addEventListener("click", current);
+
+displayForecast();
