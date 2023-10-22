@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="container">
+        <form class="row" id="form-search">
+            <input type="text" class="form-control col-1" placeholder="Type a city..." id="search-text-input"/>
+            <button type="submit" class="col-2 search">Search</button>
+            <button type="submit" class="col-3 current" id="current-location-button">Current</button>
+        </form>
+        <h1>
+            Sydney NSW, Australia
+        </h1>
+        <ul>
+            <li id="real-time">
+                Wednesday 22:00
+            </li>
+            <li id="description">
+                Partly Cloudy
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-6">
+                <img src="img/partly_cloudy.png" alt="partly cloudy" id="icon">
+                <span class="degree">
+                    19
+                </span>
+                <span class="type-degree">
+                    <a href="" id="degree-link-Celsius" class="active">°C</a> | 
+                    <a href="" id="degree-link-Fahrenheit">°F</a>
+                </span>
+            </div>  
+            <div class="col-part-two">
+                <ul>
+                    <li>
+                        Pressure: <span id="pressure">1015</span>
+                    </li>
+                    <li>
+                        Humidity: <span id="humidity">77</span>%
+                    </li>
+                    <li>
+                        Wind: <span id="wind">8</span> km/h
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class="link-who-created">
+            <a href="https://github.com/IvakhnenkoYuliia/SheCodesPlusWeek7" target="_blank">Open-source code</a>, by Ivakhnenko Yuliia
+        </div>    
+    </div>
+    <script src="style/app.js"></script>
+</body>
+</html>

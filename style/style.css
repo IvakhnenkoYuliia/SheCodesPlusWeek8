@@ -1,0 +1,151 @@
+body{
+    font-family: arial, sans-serif;
+    color: #7c7c7c; 
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    border: 1px solid #dadde1;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 480px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+button{
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    padding: 6px 7px;
+    transition: all 200ms ease;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    cursor: pointer;
+}
+
+.search{
+    background-color: #4598f2;
+}
+
+.current{
+    background-color: #28f5b4;
+}
+
+.search:hover{
+    background-color: #0069d9;
+}
+
+.current:hover{
+    background-color: #0bc489;
+}
+
+h1{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+ul{
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+li{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 100;
+    list-style: none;
+}
+
+img{
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    float: left!important;
+}
+
+.degree{
+    font-size: 64px;
+    line-height: 64px;
+    color: #212121;
+    font-weight: 400;
+    float: left!important;
+}
+
+.type-degree{
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+    font-weight: 400;
+    position: relative;
+    float: left!important;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.row{
+    display: grid;
+}
+
+.col-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.col-2{
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+
+.col-3{
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+.col-6{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.col-part-two{
+    grid-column-start: 5;
+    grid-column-end: 12;
+}
+
+.link-who-created{
+    padding-top: 10px;
+    font-size: 80%;
+    margin: 0 auto;
+    max-width: 515px;
+}
+
+.col-6 .active{
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
