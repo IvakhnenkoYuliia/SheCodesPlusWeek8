@@ -38,8 +38,12 @@ button{
     transition: all 200ms ease;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     cursor: pointer;
+    
 }
 
+*:focus {
+    outline: 0 !important;
+}
 .search{
     background-color: #4598f2;
 }
@@ -156,8 +160,6 @@ a:hover{
     text-align: center;
     color: #1f2020;
 }
-
-
 
 .weather-forecast-date{
     font-size: 16px;
